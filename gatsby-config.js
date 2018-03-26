@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Revoice Labs | Welcome to the Voice Revolution',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

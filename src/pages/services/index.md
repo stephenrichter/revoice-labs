@@ -1,7 +1,7 @@
 ---
-templateKey: 'product-page'
-path: /products
-title: Welcome to the Voice Revolution
+templateKey: 'service-page'
+path: /services
+title: Our Services
 image: /img/jumbotron.jpg
 heading: What is Voice?
 description: >-
