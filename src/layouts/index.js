@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="has-navbar-fixed-top">
     <Helmet title="Revoice Labs | Welcome to the Voice Revolution">
       <link rel="shortcut icon" type="image/png" href='img/revoice_favicon.png' />
     </Helmet>

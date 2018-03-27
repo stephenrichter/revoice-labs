@@ -5,8 +5,6 @@ import Content, { HTMLContent } from '../components/Content'
 import devices from '../img/masthead-devices.png';
 import wave from '../img/masthead-wave.svg';
 
-console.log(wave);
-
 export const HomePageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
@@ -21,16 +19,20 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
       bottom: -1px;
       content: "";
       display: block;
-      min-height: 500px;
+      min-height: 240px;
       position: absolute;
       width: 100%;
       z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 100px;
     }
   `
 
   const MastheadTitle = styled.h1`
     color: #363636;
-    font-size: 3rem;
+    font-size: 3.25rem;
     font-weight: 300;
     line-height: 1.125;
     margin-bottom: 1.5rem;
@@ -40,6 +42,17 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
     font-size: 1.375rem;
     line-height: 1.375;
     color: rgb(100, 111, 121);
+  `
+  
+  const MastheadImage = styled.img`
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+
+    @media (max-width: 768px) {
+      left: 0%;
+    }
   `
 
   const ColorSection = styled.section`
@@ -57,12 +70,18 @@ export const HomePageTemplate = ({ title, content, contentComponent }) => {
                 {title}
               </MastheadTitle>
               <MastheadSubtitle className="subtitle">
-                We help you grow your business with creative marketing solutions, while preparing you for a voice first world. 
+                We help you grow your business with creative marketing solutions, while preparing you for a voice-first world. 
               </MastheadSubtitle>
+              <div class="field is-grouped">
+                <div class="control is-expanded">
+                  <input class="input is-medium" type="email" placeholder="yourname@company.com" />
+                </div>
+                <p class="control">
+                  <a class="button is-medium is-info is-outlined">Get Started</a>
+                </p>
+              </div>
             </div>
-            <div className="column is-half">
-              <img src={devices} alt="Google Home, Amazon Echo, Sonos One" />
-            </div>
+            <MastheadImage src={devices} alt="Google Home, Amazon Echo, Sonos One" />
           </div>
         </div>
       </Masthead>
