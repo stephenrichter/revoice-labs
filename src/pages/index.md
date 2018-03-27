@@ -3,5 +3,5 @@ templateKey: 'home-page'
 path: /
 title: Welcome to the Voice Revolution
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+<h2 class="has-text-white">Unlock the power of voice for your business</h2>
+Revoice Labs is born out of a belief that voice-enabled devices will fundamentally change how people interact with technology, and therefore products and brands. This shift is going to force companies to think differently about how they market, and frankly, how they connect with their customers.

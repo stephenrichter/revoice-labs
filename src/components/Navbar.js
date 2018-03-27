@@ -27,8 +27,8 @@ const Navbar = () => (
         <Link className="navbar-item" to="/about">
           About
         </Link>
-        <div class="navbar-item">
-          <a class="button is-danger is-outlined">Get Started</a>
+        <div className="navbar-item">
+          <a className="button is-danger is-outlined">Get Started</a>
         </div>
       </div>
     </div>
